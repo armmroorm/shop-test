@@ -22,6 +22,8 @@
                   </h5>
                   <p class="mt-0">{{ item.productPrice | currency }}</p>
                   <p class="mt-0">Quantity : {{ item.productQuantity }}</p>
+                  <span class="mt-0">Size : {{ item.productSize }} | </span>
+                  <span class="mt-0">Color : {{ item.productColor }}</span>
                 </v-col>
               </v-row>
             </li>

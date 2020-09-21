@@ -42,7 +42,13 @@ Vue.use(Vuelidate);
 Vue.use(VueFirestore);
 Vue.component("Carousels", require("./components/Carousel.vue").default);
 Vue.component("add-to-cart", require("./components/AddTOCart.vue").default);
-Vue.component("add-to-cart-detail", require("./components/AddToCartDetail.vue").default);
+Vue.component(
+  "add-to-cart-detail",
+  require("./components/AddToCartDetail.vue").default
+);
+Vue.component("size-shoe", require("./components/Size").default);
+Vue.component("color-shoe", require("./components/Color").default);
+
 Vue.component("mini-cart", require("./components/MiniCart.vue").default);
 Vue.component(
   "Navagition-Good",

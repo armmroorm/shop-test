@@ -4,7 +4,7 @@ import store from "@/store";
 import Goods from "@/views/Goods.vue";
 import Detail from "@/views/DetailGoods.vue";
 import Home from "@/views/Home.vue";
-import PageCmsLogin from "@/views/PageCmsLogin.vue";
+import PageCmsLogin from "@/views/CMS/PageCmsLogin.vue";
 import DefaultContainer from "@/containers/DefaultContainer";
 import DefaultContainerCms from "@/containers/DefaultContainerCms";
 Vue.use(VueRouter);

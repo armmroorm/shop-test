@@ -6,6 +6,10 @@ export const store = {
       commit("addToCart", item);
       // commit("saveData");
     },
+    getToCartQuantity: ({ commit }, item) => {
+      commit("addToCartQuantity", item);
+      // commit("saveData");
+    },
     getDetailProduct: ({ commit }, item) => {
       commit("addDetailProduct", item);
     },
@@ -26,6 +30,17 @@ export const store = {
       );
       if (found) {
         found.productQuantity++;
+      } else {
+        state.cart.push(item);
+        state.totalCart++;
+      }
+    },
+    addToCartQuantity: (state, item) => {
+      let found = state.cart.find(
+        product => product.productId == item.productId
+      );
+      if (found) {
+        found.productQuantity += item.productQuantity;
       } else {
         state.cart.push(item);
         state.totalCart++;
